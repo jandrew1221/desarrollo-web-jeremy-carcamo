@@ -14,7 +14,7 @@ for(let j=0;j<5;j++){
     }
 
     let seleccion = document.createElement("select");
-    
+    seleccion.name=`redsocial${j}`;
     let opciones = ["Whatsapp", "Telegram", "X", "Instagram", "Tiktok", "Otra"];
 
     opciones.forEach( (opcion) => {
@@ -31,6 +31,7 @@ for(let j=0;j<5;j++){
     textinput.type = "text";
     textinput.minLength = "4";
     textinput.maxLength = "90";
+    textinput.name = `red${j}.text`
     
     divlink.appendChild(textinput);
 
