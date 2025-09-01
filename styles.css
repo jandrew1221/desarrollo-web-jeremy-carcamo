@@ -1,0 +1,95 @@
+body {
+    font-family: arial;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imagenes/fondo.png'); 
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: repeat;       
+    margin: 0;                          
+    height: 100vh;                      
+    color: #ffffff;
+}
+
+.titulos{
+    font-family:'Lucida Sans';
+    font-size: 20px;
+}
+.contenedoradopciones{
+    border: 10px transparent black;
+    padding: 2px;
+    background-color: rgba(240, 248, 255, 0.309);
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    
+}
+.contenedorformulario{
+    border: 10px transparent black;
+    padding: 2px;
+    background-color: rgba(240, 248, 255, 0.309);
+    width: 430px;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    
+}
+.contenedorbotones{
+    border: 10px transparent rgba(0, 0, 0, 0);
+    padding: 2px;
+    background-color: rgba(42, 204, 142, 0);
+    width: 500px;
+    height: 30px;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+button {
+  background-color: #4CAF50; /* verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  resize: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size:10px;
+
+}
+
+.button {
+  background-color: #4CAF50; /* verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  resize: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size:10px;
+
+} 
+table {
+    justify-self: center;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    border: 1px solid rgb(51, 51, 51,0.612);
+    padding: 8px;
+}
+th {
+    background-color: rgba(255, 255, 255, 0.612);
+}
+
+img{
+    height:100px;
+    width:100px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Adopcion de mascotas</title>
+        
+    </head>
+
+    <body>
+        <div class="titulos">Formulaio para annadir un aviso de adopcion</div>
+        <link rel="stylesheet" href="styles.css">
+        <div class="contenedorbotones">
+        <a href="index.html" class="button">Volver a la portada</a>
+        </div>
+        <div class='contenedorformulario' id="cajaerrores" style="display: none;">
+            <div>El formulario presenta los siguentes errores:</div>
+            <div id="mensajefin" style="color: rgb(0, 225, 255);"></div> 
+        
+        </div> 
+
+        <div id="val-box" hidden>
+            <h2 id="val-msg"></h2>
+            <ul id="val-list"></ul>
+        </div>
+        <form class="formulario" id="adopcion-form">
+            <div class="contenedorformulario" style="margin-bottom: 5px;">
+                <div class="donde">
+                    <div>Donde?</div><br>
+
+                <div id="region-input">
+                    <label for="regiones">Region</label><br>
+                    <select id="regiones">
+                        <option value="0">Selecciona una region</option>
+                    </select>
+
+                </div>
+                <div id="comuna-input">
+                    <label for="comuna">Comuna</label><br>
+                    <select id="comuna" >
+                        <option value="0">Selecciona una comuna</option>
+
+                    </select>
+
+                </div>
+                <div id="sector-input">
+                    <label for="sector">Sector</label><br>
+                    <input id='sector' name="sector" type="text" maxlength="100">
+                </div>
+
+            </div>
+            </div>
+            <div class="contenedorformulario" style="margin-bottom: 5px;">
+                <div class="contacto">
+                    <div>¿Contacto de esta publicacion?</div><br>
+
+                <div id="nombre-input">
+                    <label for="nombre">nombre</label><br>
+                    <input id='nombre' name="nombre" type="text" required minlength="3" maxlength="100">
+                </div>
+
+                <div id="email-input">
+                    <label for="email">email</label><br>
+                    <input id='email' name="email" type="email" required maxlength="100">
+                </div>
+
+                <div id="tel-input">
+                    <label for="tel">telefono</label><br>
+                    <input id='tel' name="tel" type="tel" pattern="\+[0-9]{2,3}\.+[0-9]{1,8}" maxlength="16">
+                </div>
+
+                <div id="link-input" >
+                    <div>contactar por</div>
+                    <!-- <select id="redsocial">
+                        <option>Red</option>
+                        <option>whatsapp</option>
+                        <option>telegram</option>
+                        <option>X</option>
+                        <option>instagram</option>
+                        <option>tiktok</option>
+                        <option>otra</option>
+
+                    </select>
+                    <input id='enlace' name="enlace" type='text' minlength='4' maxlength="90" > -->
+                </div>
+                </div>
+            </div>
+            <div class="contenedorformulario">
+                <div class="mascota">
+                    <div class="quemascota">
+                        <div>¿Qué mascota ofrece en adopción?
+
+                        </div><br>
+                    </div>
+                    <div id="mascotatipo-input" style="justify-self: start;">
+                        <label for="mascotatipo">Tipo</label>
+                        <select id="mascotatipo" style="justify-self: start;">
+                            <option value="0"> Selecciona un tipo</option>
+                            <option value="1">Perro</option>
+                            <option value="2">Gato</option>           
+                        </select>
+                    </div>
+
+                    <div id="mascotacantidad-input" style="justify-self: start;">
+                        <label for="mascotacantidad">Cantidad</label>
+                        <input style="width: 50px;" id="mascotacantidad" name="mascotacantidad" type="number" min="1" step="1" required> <!--aqui en el js verificamos la cantidad-->
+                    </div>
+                    <div id="mascotaedad-input">
+                        <div style="justify-self: start;">Edad
+                        <input style="width: 50px;" id="mascotaedad" name="mascotaedad" type="number" min="1" step="1" required>
+
+                        <select id="mascotatipoedad">
+                            <option value="0">Selecciona una medida</option>
+                            <option value="1">Meses</option>
+                            <option value="2">Annos</option>           
+                        </select>
+                        </div>
+                    </div>
+
+                
+
+                    <div id="mascotaentrega-input">
+                        <div style="justify-self: start;">Fecha para entrega
+                        <input id="mascotaentrega" type="datetime-local"> 
+                    </div>
+
+                    <div id="mascotadescripcion-input" style="justify-self: start;">
+                        <div style="justify-self: start;">Descripcion</div>
+                        <textarea id="mascotadescripcion" name="mascotadescripcion" rows="10" cols="50"></textarea>
+                    </div>
+
+                    <div id="mascotafoto-input" style="justify-content: start;">
+                        <div style="justify-self: start;">Fotos</div>
+                        <!-- <label for="mascotafotos">Fotos</label>
+                        <input id="mascotafotos" name="mascotafotos" type="file" min='1' max="5"> -->
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button type="button" id="botonsumbit">Agregar aviso de adopcion</button>
+            
+        </form>
+        
+
+    <script src="scripts/region_comuna.js"></script>
+    <script src="scripts/validador.js"></script>
+    </body>
+</html>
