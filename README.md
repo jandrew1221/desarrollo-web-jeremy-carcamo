@@ -1,0 +1,1 @@
+Notas: Para el formulario intente crear los inputs a medida que se llenaban para los links y las imagenes, pero termine generandolos todos en un for y ocultando los posteriores, de manera se ahorra la logica de crear tantos botones y estar al pendiente de inputs del usuario
